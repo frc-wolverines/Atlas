@@ -1,7 +1,8 @@
+import 'package:Atlas/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'widgets/tabbar.dart';
+import 'widgets/tab_bar.dart';
 
 const Color maize = Color.fromARGB(255, 255, 241, 100);
 const Color blue = Color.fromARGB(255, 15, 112, 176);
@@ -34,7 +35,7 @@ class Atlas extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Archivo', colorScheme: scheme),
-      home: const HomeTabBar()
+      home: const Home()
     );
   }
 }
